@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+  <title>Volume Meter Sample</title>
+  <style>
+  </style>
+  <script type="text/javascript" src="../oneminutechanges-fastopt.js"></script>
+  <script type="text/javascript" src="/workbench.js"></script>
+  <script>
+    var oneminutechanges = oneminutechanges.Main();
+    oneminutechanges.main();
+
+    // Little indirection here, but we get scoping issues when passing ScalaJS functions around
+    function onVolumeSignal(x){
+      oneminutechanges.onVolumeSignal(x);
+    }
+
+  </script>
+  <!-- Include the volume meter component -->
+  <script src="volume-meter.js"></script>
+  <!-- Include the main app logic -->
+  <script src="main.js"></script>
+</head>
+<body>
+  <canvas id="meter" width="500" height="50"></canvas>
+</body>
+</html>
