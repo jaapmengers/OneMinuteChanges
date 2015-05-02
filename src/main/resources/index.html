@@ -4,8 +4,14 @@
   <title>Volume Meter Sample</title>
   <style>
   </style>
+  <!-- Include the volume meter component -->
+  <script src="volume-meter.js"></script>
+</head>
+<body>
   <script type="text/javascript" src="../oneminutechanges-fastopt.js"></script>
   <script type="text/javascript" src="/workbench.js"></script>
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/react/0.12.2/react-with-addons.js"></script>
+
   <script>
     var oneminutechanges = oneminutechanges.Main();
     oneminutechanges.main();
@@ -16,12 +22,7 @@
     }
 
   </script>
-  <!-- Include the volume meter component -->
-  <script src="volume-meter.js"></script>
   <!-- Include the main app logic -->
   <script src="main.js"></script>
-</head>
-<body>
-  <canvas id="meter" width="500" height="50"></canvas>
 </body>
 </html>
