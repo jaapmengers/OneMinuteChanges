@@ -21,5 +21,3 @@ jsDependencies ++= Seq(
 
 bootSnippet := "oneminutechanges.Main().main();"
 
-updateBrowsers <<= updateBrowsers.triggeredBy(fastOptJS in Compile)
-
